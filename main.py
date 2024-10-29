@@ -48,7 +48,7 @@ userhs_rect.center = (window_width // 2 - 50, window_height - 75)
 
 # Highest Score
 hscore = score
-# hscore = d.hscore()
+# hscore = d.hscore(mode)
 hscore_font = p.font.Font('freesansbold.ttf', 32)
 hscore_text = hscore_font.render('Score : ' + str(hscore), True, (0, 0, 0), (255, 255, 255))
 hscore_rect = hscore_text.get_rect()
@@ -97,7 +97,7 @@ jump_height = 200
 
 username = ''
 username_given = False
-# hsusername = d.hsusername()
+# hsusername = d.hsusername(mode)
 hsusername = username
 
 time = 5
@@ -138,7 +138,7 @@ def gquit():
     now = datetime.now()
     game_quit = now.strftime('%H:%M:%S')
     game_end_day = date.today()
-    # d.gamelog(username, ceil(score), game_start, game_quit, game_start_day, game_end_day)
+    # d.gamelog(username, ceil(score), mode, game_start, game_quit, game_start_day, game_end_day)
     p.quit()
     quit()
 
