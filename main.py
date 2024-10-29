@@ -138,7 +138,7 @@ def gquit():
     now = datetime.now()
     game_quit = now.strftime('%H:%M:%S')
     game_end_day = date.today()
-    # gamelog(username, ceil(score), game_start, game_quit, game_start_day, game_end_day)
+    # d.gamelog(username, ceil(score), game_start, game_quit, game_start_day, game_end_day)
     p.quit()
     quit()
 
