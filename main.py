@@ -90,10 +90,6 @@ x4 = -300
 y_speed = 0.6
 obstacle_speed = 1
 
-# Useless
-im_width = image.get_width()
-im_height = image.get_height()
-
 jump = False
 fall = False
 
