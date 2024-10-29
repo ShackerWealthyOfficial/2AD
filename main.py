@@ -76,7 +76,7 @@ end_rect.center = (window_width // 2 + 22, window_height // 2 - 150)
 
 image.set_colorkey((255, 255, 255))
 p.display.set_icon(image)
-p.display.set_caption('AD')
+p.display.set_caption('2AD')
 
 # Coordinates of character
 x, y = 100, 300
