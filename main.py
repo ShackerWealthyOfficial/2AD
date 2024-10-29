@@ -250,7 +250,7 @@ while lcond:
         p.draw.rect(window, (0, 0, 0), p.Rect(0, y2 + image_height, window_width, 5))
 
     else:
-        p.time.wait(2000)
+        p.time.wait(1500)
         if stop == 1:
             p.draw.rect(window, (0, 0, 0), p.Rect(0, y2 + image_height, window_width, 5))
             # Reusing user_text since it, no longer, has any other use
@@ -259,7 +259,7 @@ while lcond:
             window.blit(end_text, end_rect)
             stop += 1
         elif stop == 2:
-            p.time.wait(250)
+            p.time.wait(100)
             window.blit(user_text, user_rect)
             stop += 1
 
