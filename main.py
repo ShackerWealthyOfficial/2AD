@@ -256,10 +256,13 @@ while lcond:
             # Reusing user_text since it, no longer, has any other use
             user_text = user_font.render('Press Q to Quit', True, (0, 0, 0), (255, 255, 255))
             user_rect.center = (window_width // 2, window_height // 2 - 100)
-            window.blit(user_text, user_rect)
             window.blit(end_text, end_rect)
+            stop += 1
+        elif stop == 2:
+            p.time.wait(250)
+            window.blit(user_text, user_rect)
+            stop += 1
 
     p.display.update()
 
 p.quit()
-
